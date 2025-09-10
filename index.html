@@ -1,0 +1,31 @@
+
+<!DOC TYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="form-container" id="signingupForm">
+      <h2>Signing Up</h2>
+      <input type="text" id="signupUsername" placeholder="Username" required />
+      <input type="password" id="signupPassword" placeholder="Password" required />
+      <button onclick="signUp()">Sign Up</button>
+      <p>Already have an account? <a href="#" onclick="toggleForm('login')">Login</a></p>
+    </div>
+
+    <div class="form-container hidden" id="loginForm">
+      <h2>Login</h2>
+      <input type="textt" id="loginUsername" placeholder="Username" required />
+      <input type="password" id="loginPassword" placeholder="Password" required />
+      <button onclick="login()">Login</button>
+      <p>Don't have an account? <a href="#" onclick="toggleForm('signup')">Sign Up</a></p>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
